@@ -1,0 +1,3 @@
+datacatalog-custom-entries-manager
+datacatalog-tag-manager>=2.0.2,<2.1
+datacatalog-tag-template-processor
