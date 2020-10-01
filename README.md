@@ -12,5 +12,6 @@ and [Tags](https://cloud.google.com/data-catalog/docs/concepts/overview#tags).
 python load_model_csv.py \
   --files-folder <CSV-FILES-PATH> \
   --project-id <YOUR-PROJECT-ID> \
-  --location-id <YOUR-LOCATION-ID>
+  --location-id <YOUR-LOCATION-ID> \
+  [--delete-existing-tag-templates]
 ```
