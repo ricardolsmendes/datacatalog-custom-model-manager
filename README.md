@@ -1,8 +1,17 @@
 # datacatalog-custom-model-manager
 
-Python scripts to load user specified metadata models into Google Cloud Data Catalog, comprising
+Python package to load user specified metadata models into Google Cloud Data Catalog, comprising
 [Custom Entries](https://cloud.google.com/data-catalog/docs/how-to/custom-entries), Tag Templates,
 and [Tags](https://cloud.google.com/data-catalog/docs/concepts/overview#tags).
+
+It is powered by [datacatalog-custom-entries-
+manager](https://github.com/ricardolsmendes/datacatalog-custom-entries-manager), [datacatalog-
+tag-template-processor](https://github.com/mesmacosta/datacatalog-tag-template-processor), and
+[datacatalog-tag-manager](https://github.com/ricardolsmendes/datacatalog-tag-manager), leveraging
+their features in the format of a single CLI.
+
+> **WORK IN PROGRESS**: This repository is under active development and breaking changes are
+> expected in the coming weeks!
 
 - *COMMANDS* 
 
