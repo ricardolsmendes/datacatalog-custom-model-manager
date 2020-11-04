@@ -17,8 +17,10 @@ their features in the format of a single CLI.
 
 **Python + virtualenv**
 
-```bash
-python load_model_csv.py \
+```shell script
+pip install -e .
+
+datacatalog-custom-model load \
   --files-folder <CSV-FILES-PATH> \
   --project-id <YOUR-PROJECT-ID> \
   --location-id <YOUR-LOCATION-ID> \
