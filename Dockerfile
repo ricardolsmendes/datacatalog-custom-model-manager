@@ -15,9 +15,9 @@ COPY . .
 FROM builder as qa
 
 # Run static code checks.
-# RUN pip install flake8 yapf
-# RUN yapf --diff --recursive src tests
-# RUN flake8 src tests
+RUN pip install flake8 yapf
+RUN yapf --diff --recursive src tests
+RUN flake8 src tests
 
 # Run the unit tests.
 # RUN python setup.py test

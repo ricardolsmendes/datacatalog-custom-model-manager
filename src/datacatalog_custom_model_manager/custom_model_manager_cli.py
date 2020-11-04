@@ -29,12 +29,15 @@ class CustomModelManagerCLI:
         subparsers = parser.add_subparsers()
 
         load_model_parser = subparsers.add_parser('load', help='Load Custom Model')
-        load_model_parser.add_argument(
-            '--files-folder', help='Path to the CSV files container folder', required=True)
-        load_model_parser.add_argument(
-            '--project-id', help='Google Cloud Project ID', required=True)
-        load_model_parser.add_argument(
-            '--location-id', help='Google Cloud Location ID', required=True)
+        load_model_parser.add_argument('--files-folder',
+                                       help='Path to the CSV files container folder',
+                                       required=True)
+        load_model_parser.add_argument('--project-id',
+                                       help='Google Cloud Project ID',
+                                       required=True)
+        load_model_parser.add_argument('--location-id',
+                                       help='Google Cloud Location ID',
+                                       required=True)
         load_model_parser.add_argument(
             '--delete-existing-tag-templates',
             action='store_true',
