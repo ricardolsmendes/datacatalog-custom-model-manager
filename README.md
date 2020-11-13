@@ -33,11 +33,9 @@ README](https://github.com/ricardolsmendes/datacatalog-tag-manager#211-from-a-cs
 
 - *SAMPLE INPUT*
 
-1. [sample-input/egeria-business-
-   glossary](https://github.com/ricardolsmendes/datacatalog-custom-model-manager/tree/master/sample-input/egeria-business-glossary)
+1. [sample-input/egeria-business-glossary](https://github.com/ricardolsmendes/datacatalog-custom-model-manager/tree/master/sample-input/egeria-business-glossary)
    for reference;
-1. [Sample metadata for datacatalog-custom-model-
-   manager](https://docs.google.com/spreadsheets/d/13MuxLjQGrD-A7R4p_3TGaVFCV3X0atWmyxIINQNF2R4)
+1. [Sample metadata for datacatalog-custom-model-manager](https://docs.google.com/spreadsheets/d/13MuxLjQGrD-A7R4p_3TGaVFCV3X0atWmyxIINQNF2R4)
    (Google Sheets) might help to create/export the mandatory CSV files.
 
 - *COMMANDS*
