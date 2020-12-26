@@ -10,8 +10,8 @@ tag-template-processor](https://github.com/mesmacosta/datacatalog-tag-template-p
 [datacatalog-tag-manager](https://github.com/ricardolsmendes/datacatalog-tag-manager), leveraging
 their features in the format of a single CLI.
 
-> **WORK IN PROGRESS**: This repository is under active development and breaking changes are
-> expected in the coming weeks!
+![Continuous Integration](https://github.com/ricardolsmendes/datacatalog-custom-model-manager/workflows/Continuous%20Integration/badge.svg)
+![Continuous Delivery](https://github.com/ricardolsmendes/datacatalog-custom-model-manager/workflows/Continuous%20Delivery/badge.svg)
 
 ---
 
@@ -43,11 +43,23 @@ README](https://github.com/ricardolsmendes/datacatalog-tag-manager#211-from-a-cs
 **Python + virtualenv**
 
 ```shell script
-pip install -e .
+pip install datacatalog-custom-model-manager
 
 datacatalog-custom-model load \
   --files-folder <CSV-FILES-PATH> \
-  --project-id <YOUR-PROJECT-ID> \
-  --location-id <YOUR-LOCATION-ID> \
+  --project-id <YOUR-PROJECT-ID> --location-id <YOUR-LOCATION-ID> \
+  [--delete-existing-tag-templates]
+```
+
+**Docker**
+
+```shell script
+docker build --rm --tag datacatalog-custom-model-manager .
+
+docker run --rm --tty \
+  --volume <CREDENTIALS-FILE-FOLDER>:/credentials --volume <CSV-FILE-FOLDER>:/data \
+  datacatalog-custom-model-manager load \
+  --files-folder <CSV-FILES-PATH> \
+  --project-id <YOUR-PROJECT-ID> --location-id <YOUR-LOCATION-ID> \
   [--delete-existing-tag-templates]
 ```

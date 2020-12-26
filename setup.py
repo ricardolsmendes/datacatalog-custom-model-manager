@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name='datacatalog_custom_model_manager',
+    name='datacatalog-custom-model-manager',
     version='0.0.1',
     url='https://github.com/ricardolsmendes/datacatalog-custom-model-manager',
     author='Ricardo Mendes',
