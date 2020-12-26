@@ -52,12 +52,13 @@ class CustomModelManagerCLI:
         datacatalog_custom_entries_manager.CustomEntriesSynchronizer(
             args.project_id, args.location_id).sync_to_file(f'{args.files_folder}/entries.csv', '')
 
+        tag_template_ds_proc = tag_template_datasource_processor.TagTemplateDatasourceProcessor()
         if args.delete_existing_tag_templates:
-            tag_template_datasource_processor.TagTemplateDatasourceProcessor() \
-                .delete_tag_templates_from_csv(f'{args.files_folder}/tag_templates.csv')
+            tag_template_ds_proc.delete_tag_templates_from_csv(
+                f'{args.files_folder}/tag_templates.csv')
 
-        tag_template_datasource_processor.TagTemplateDatasourceProcessor() \
-            .create_tag_templates_from_csv(f'{args.files_folder}/tag_templates.csv')
+        tag_template_ds_proc.create_tag_templates_from_csv(
+            f'{args.files_folder}/tag_templates.csv')
 
         datacatalog_tag_manager.TagDatasourceProcessor().upsert_tags_from_csv(
             f'{args.files_folder}/tags.csv')
