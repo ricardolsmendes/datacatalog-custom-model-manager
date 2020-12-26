@@ -18,10 +18,10 @@ setuptools.setup(
     },
     include_package_data=True,
     install_requires=(
-        'datacatalog-custom-entries-manager ~= 0.1.1',
-        'datacatalog-tag-manager ~= 2.1.1',
+        'datacatalog-custom-entries-manager ~= 0.1.2',
+        'datacatalog-tag-manager ~= 2.1.2',
         'datacatalog-tag-template-processor ~= 0.2.0',
-        'numpy ~= 1.19.4',
+        'numpy >= 1.19.0, <= 1.19.3',
         'pandas ~= 1.1.4',
     ),
     setup_requires=('pytest-runner', ),
