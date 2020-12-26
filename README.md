@@ -24,12 +24,12 @@ their features in the format of a single CLI.
 Loading custom models from CSV requires a folder (`--files-folder` argument in the below commands)
 containing three files: `entries.csv`, `tag_templates.csv`, and `tags.csv`. Please refer to the
 following external resources for further details on their layouts:
-* `entries.csv`: [datacatalog-custom-entries-manager
-README](https://github.com/ricardolsmendes/datacatalog-custom-entries-manager#211-to-a-csv-file)
-* `tag_templates.csv`: [datacatalog-tag-template-processor
-README](https://github.com/mesmacosta/datacatalog-tag-template-processor#21-create-a-csv-file-representing-the-templates-to-be-created)
-* `tags.csv`: [datacatalog-tag-manager
-README](https://github.com/ricardolsmendes/datacatalog-tag-manager#211-from-a-csv-file)
+
+| FILE                | LAYOUT DOCUMENTATION                                                                                                                                                        |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `entries.csv`       | [datacatalog-custom-entries-manager README](https://github.com/ricardolsmendes/datacatalog-custom-entries-manager#211-to-a-csv-file)                                        |
+| `tag_templates.csv` | [datacatalog-tag-template-processor README](https://github.com/mesmacosta/datacatalog-tag-template-processor#21-create-a-csv-file-representing-the-templates-to-be-created) |
+| `tags.csv`          | [datacatalog-tag-manager README](https://github.com/ricardolsmendes/datacatalog-tag-manager#211-from-a-csv-file)                                                            |
 
 - *SAMPLE INPUT*
 
