@@ -18,9 +18,9 @@ setuptools.setup(
     },
     include_package_data=True,
     install_requires=(
-        'datacatalog-custom-entries-manager >= 0.1.0',
-        'datacatalog-tag-manager >= 2.1.0, < 2.2',
-        'datacatalog-tag-template-processor >= 0.2.0',
+        'datacatalog-custom-entries-manager ~= 0.1.1',
+        'datacatalog-tag-manager ~= 2.1.1',
+        'datacatalog-tag-template-processor ~= 0.2.0',
     ),
     setup_requires=('pytest-runner', ),
     tests_require=('pytest-cov', ),
