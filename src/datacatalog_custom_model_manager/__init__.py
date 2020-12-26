@@ -1,3 +1,3 @@
-from .custom_model_manager_cli import main  # noqa: F401
+from .custom_model_manager_cli import main
 
-__all__ = 'main'
+__all__ = ('main', )
